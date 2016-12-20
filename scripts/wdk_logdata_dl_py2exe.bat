@@ -1,0 +1,2 @@
+python wdk_logdata_dl_py2exe.py install
+python wdk_logdata_dl_py2exe.py py2exe

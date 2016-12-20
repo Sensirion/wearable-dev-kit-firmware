@@ -1,0 +1,1 @@
+dist\Sensirion_Pebble_Backpack_Logger.exe "COM49"
