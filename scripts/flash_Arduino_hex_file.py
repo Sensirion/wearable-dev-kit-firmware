@@ -61,8 +61,9 @@ class flashBinToArduino(object):
         ser.close()
  
     def loadBinFile(self, comport=None):
-        bossac = os.path.abspath(r'C:\Users\dlehmann\AppData\Local\Arduino15\packages\arduino\tools\bossac\1.6.1-arduino\bossac.exe')
-        binary = os.path.abspath(r'C:\Users\dlehmann\Downloads\test.bin')
+        # change path according to your specific setup
+        bossac = os.path.abspath(r'C:\Users\user\AppData\Local\Arduino15\packages\arduino\tools\bossac\1.6.1-arduino\bossac.exe')
+        binary = os.path.abspath(r'C:\Users\user\Downloads\pebble.ino.SensirionArduinoZero')
         output = subprocess.check_call(['{}'.format(bossac), '-i', '-d', '--port={}'.format(comport), '--force_usb_port=true',
                                '-i', '-e', '-w', '-v','{}'.format(binary), '-R'])
         print output
