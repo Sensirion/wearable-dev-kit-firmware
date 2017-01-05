@@ -1,1 +1,2 @@
-dist\Sensirion_Pebble_Backpack_Logger.exe "COM49"
+# adapt COM port according to your setup
+dist\wdk_logdata_downloader.exe "COM49"
